@@ -19,7 +19,7 @@ class Battery {
     explicit Battery(long l, long h): low(l), high(h) {};
     explicit Battery(long l, long h, byte f): low(l), high(h), full(f) {};
 
-    long read();
+    Battery read();
     
   private:
     byte _level;

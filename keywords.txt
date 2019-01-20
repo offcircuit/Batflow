@@ -1,12 +1,12 @@
 ###########################################
-# Syntax Coloring Map For Battery-library
+# Syntax Coloring Map For Batflow-library
 ###########################################
 
 ###########################################
 # Datatypes			(KEYWORD1)
 ###########################################
 
-BatFlow				(KEYWORD1)
+Batflow				(KEYWORD1)
 
 ###########################################
 # Methods and Functions		(KEYWORD2)

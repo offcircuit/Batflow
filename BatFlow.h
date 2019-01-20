@@ -1,5 +1,5 @@
-#ifndef BATTERY_H
-#define BATTERY_H
+#ifndef BATFLOW_H
+#define BATFLOW_H
 
 #if ARDUINO >= 100
 #include "Arduino.h"
@@ -7,19 +7,19 @@
 #include "WProgram.h"
 #endif
 
-class Battery {
+class BatFlow {
   public:
     byte full = 5;
     const byte &level = _level;
     const long &val = _val;
     const float &percent = _percent;
 
-    explicit Battery() {};
-    explicit Battery(long h): high(h) {};
-    explicit Battery(long l, long h): low(min(l, h)), high(max(l, h)) {};
-    explicit Battery(long l, long h, byte f): low(min(l, h)), high(max(l, h)), full(f) {};
+    explicit BatFlow() {};
+    explicit BatFlow(long h): high(h) {};
+    explicit BatFlow(long l, long h): low(min(l, h)), high(max(l, h)) {};
+    explicit BatFlow(long l, long h, byte f): low(min(l, h)), high(max(l, h)), full(f) {};
 
-    Battery read();
+    BatFlow read();
     
   private:
     byte _level;

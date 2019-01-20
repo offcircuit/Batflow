@@ -1,5 +1,5 @@
-# Battery
-class Battery arduino(uno)
+# BatFlow
+class BatFlow arduino(uno)
 
 # TESTED ON
 arduino uno

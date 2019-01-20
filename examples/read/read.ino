@@ -1,6 +1,6 @@
-#include "Battery.h"
+#include "Batflow.h"
 
-Battery bat(3100, 5000, 7);
+Batflow bat(3100, 5000, 7);
 
 void setup() {
   // put your setup code here, to run once:

@@ -6,7 +6,7 @@
 # Datatypes			(KEYWORD1)
 ###########################################
 
-Battery				(KEYWORD1)
+BatFlow				(KEYWORD1)
 
 ###########################################
 # Methods and Functions		(KEYWORD2)

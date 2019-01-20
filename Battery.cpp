@@ -9,7 +9,7 @@ Battery Battery::read() {
   while (bit_is_set(ADCSRA, ADSC));
   _val = 1126400L / (ADCL | (ADCH << 8));
   _percent = (_val * 100) / (float)max(_val, high);
-  _level = map(_val, low, high, 0, full);
+  _level = max(0, map(_val, low, high, 0, full));
   return *this;
 }
 

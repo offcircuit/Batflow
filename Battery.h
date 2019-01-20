@@ -16,8 +16,8 @@ class Battery {
 
     explicit Battery() {};
     explicit Battery(long h): high(h) {};
-    explicit Battery(long l, long h): low(l), high(h) {};
-    explicit Battery(long l, long h, byte f): low(l), high(h), full(f) {};
+    explicit Battery(long l, long h): low(min(l, h)), high(max(l, h)) {};
+    explicit Battery(long l, long h, byte f): low(min(l, h)), high(max(l, h)), full(f) {};
 
     Battery read();
     

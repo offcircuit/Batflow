@@ -1,8 +1,8 @@
-#include "Battery.h"
+#include "BatFlow.h"
 
 // PUBLIC
 
-Battery Battery::read() {
+BatFlow BatFlow::read() {
   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
   delay(2);
   ADCSRA |= _BV(ADSC);

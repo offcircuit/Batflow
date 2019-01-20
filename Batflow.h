@@ -7,19 +7,19 @@
 #include "WProgram.h"
 #endif
 
-class BatFlow {
+class Batflow {
   public:
     byte full = 5;
     const byte &level = _level;
     const long &val = _val;
     const float &percent = _percent;
 
-    explicit BatFlow() {};
-    explicit BatFlow(long h): high(h) {};
-    explicit BatFlow(long l, long h): low(min(l, h)), high(max(l, h)) {};
-    explicit BatFlow(long l, long h, byte f): low(min(l, h)), high(max(l, h)), full(f) {};
+    explicit Batflow() {};
+    explicit Batflow(long h): high(h) {};
+    explicit Batflow(long l, long h): low(min(l, h)), high(max(l, h)) {};
+    explicit Batflow(long l, long h, byte f): low(min(l, h)), high(max(l, h)), full(f) {};
 
-    BatFlow read();
+    Batflow read();
     
   private:
     byte _level;

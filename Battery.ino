@@ -1,6 +1,6 @@
 #include "Battery.h"
 
-Battery b(5160, 5200);
+Battery bat(5150, 5200, 6);
 
 void setup() {
   // put your setup code here, to run once:
@@ -9,11 +9,11 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Serial.print(b.read().val);
+  Serial.print(bat.read().val);
   Serial.print("mV ---- ");
-  Serial.print(b.percent);
+  Serial.print(bat.percent);
   Serial.print("% ---- ");
-  Serial.print(b.level);
+  Serial.print(bat.level);
   Serial.println("_");
   delay(100);
 }

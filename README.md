@@ -1,5 +1,5 @@
-# BatFlow
-class BatFlow arduino(uno)
+# Batflow
+class Batflow arduino(uno)
 
 # TESTED ON
 arduino uno

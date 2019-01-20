@@ -1,8 +1,8 @@
-#include "BatFlow.h"
+#include "Batflow.h"
 
 // PUBLIC
 
-BatFlow BatFlow::read() {
+Batflow Batflow::read() {
   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
   delay(2);
   ADCSRA |= _BV(ADSC);

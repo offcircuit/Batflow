@@ -1,6 +1,6 @@
 #include "Battery.h"
 
-Battery bat(5150, 5200, 7);
+Battery bat(3100, 5000, 7);
 
 void setup() {
   // put your setup code here, to run once:

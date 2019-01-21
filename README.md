@@ -6,4 +6,4 @@ arduino uno
 
 # FAILS ON
 
-esp8266 D1 mini
+WeMos D1 R1
